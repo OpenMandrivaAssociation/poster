@@ -3,12 +3,12 @@
 Summary:	PostScript Utilities
 Name:		poster
 Version:	0
-Release:	%mkrel 0.%{snap}.2
+Release:	%mkrel 0.%{snap}.3
 License:	GPL
 Group:		System/Printing
 Source:		ftp://ftp.kde.org/pub/kde/printing/poster.tar.bz2
-Conflicts:	printer-utils-2006 printer-utils-2007
-Conflicts:	printer-filters-2006 printer-filters-2007
+Conflicts:	printer-utils = 2007
+Conflicts:	printer-filters = 2007
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
