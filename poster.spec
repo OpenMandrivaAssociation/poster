@@ -9,7 +9,6 @@ Group:		System/Printing
 Source:		ftp://ftp.kde.org/pub/kde/printing/poster.tar.bz2
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Poster can be used to create a large poster by building it from multiple pages
