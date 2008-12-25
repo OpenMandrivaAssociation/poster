@@ -3,10 +3,11 @@
 Summary:	PostScript Utilities
 Name:		poster
 Version:	0
-Release:	%mkrel 0.%{snap}.3
+Release:	%mkrel 0.%{snap}.4
 License:	GPL
 Group:		System/Printing
-Source:		ftp://ftp.kde.org/pub/kde/printing/poster.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/printing/poster.tar.bz2
+Patch0:		poster-LDFLAGS.diff
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
@@ -22,10 +23,11 @@ assembling. The input picture will be scaled to obtain the desired size.
 %prep
 
 %setup -q -n %{name}-%{snap}
+%patch0 -p0
 
 %build
 
-%make CFLAGS="%{optflags}"
+%make CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
 rm -rf %{buildroot}
