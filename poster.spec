@@ -3,7 +3,7 @@
 Summary:	PostScript Utilities
 Name:		poster
 Version:	20060221
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		System/Printing
 Source0:	ftp://ftp.kde.org/pub/kde/printing/poster.tar.bz2
