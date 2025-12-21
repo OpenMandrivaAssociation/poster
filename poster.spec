@@ -9,6 +9,7 @@ Group:		System/Printing
 Source0:	ftp://ftp.kde.org/pub/kde/printing/poster.tar.bz2
 Patch0:		poster-LDFLAGS.diff
 
+BuildRequires:	make
 %description
 Poster can be used to create a large poster by building it from multiple pages
 and/or printing it on large media. It expects as input a generic (encapsulated)
